@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Codificador e Decodificador de Texto</title>
+</head>
+<body>
+    <div class="content">
+        
+        <div class="logo"><img src="./images/Logo.png" alt="logo"></div>
+        <div class="mainContent">
+            <div class="entrada"><textarea id="texto" type="text" placeholder="Digite seu texto" ></textarea></div>
+            <div class="saida">
+                <div class="msg">
+                    <img src="./images/High-quality-products.png" alt="">
+                    <p class="text1">Nenhuma mensagem <br> encontrada</p>
+                    <p class="text2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="saidatexto">
+                    <textarea id="saidaTexto" type="text" readonly ></textarea>
+                    <button id="btncopiarTexto" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+            
+            <div class="btns">
+                <div class="aviso"><img src="./images/bi_exclamation-circle-fill.png" alt=""><p class="text3">Apenas letras minúsculas e sem acento.</p></div>
+                <button class="btn crip" id="crip" onclick="criptografar()" >Criptografar</button>
+                <button class="btn descrip" id="descrip" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,132 @@
+.content{
+    display: block;
+    background: #e6e6e6;
+    width: 100%;
+    height: 100vh;
+}
+.mainContent{
+    display: grid;
+    grid-template:
+    "content content advert"
+    "content content advert"
+    "btn btn advert";
+    width: 90vw;
+    height: 80vh;
+    margin: 40px;
+}
+.logo{
+    padding: 20px 20px;
+}
+.entrada{
+    font-family: 'Inter', sans-serif;
+    margin: 10px 15px 10px 50px;
+    padding: 10px;
+    grid-area: content;
+
+}
+textarea{
+    background: none;
+    color: #0A3871;
+    font-size: 18px;
+    width: 100%;
+    height: 490px;
+    border: none;
+    resize: none;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+::placeholder{
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+
+}
+.saida{
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;
+    background-color: #ffffff;
+    grid-area: advert;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    width: 400px;
+}
+.saida .msg {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.text1 {
+    padding: 15px 1px;
+    text-align: center;
+    font-weight: bold;
+}
+.text2 {
+    padding: 15px 1px;
+    text-align: center;
+}
+.btns {
+    grid-area: btn;
+    text-align: center;
+}
+button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #0A3871;
+    width: 200px;
+    height: 55px;
+}
+.crip{
+    background-color: #0A3871;
+    color: #ffffff;
+}
+.descrip {
+    background-color: #609ED4;
+    color: #0A3871;
+    
+}
+.descrip:hover{
+    background-color: #0A3871;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.crip:hover {
+    background-color: #609ED4;
+    color: #0A3871;
+    transition: 0.5s;
+}
+.aviso{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.saidatexto{
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.hide{
+    display:none;
+}
+#btncopiarTexto {
+    background-color: #ffffff;
+    color: #0A3871;
+}
+#btncopiarTexto:hover {
+    color: #ffffff;
+    background-color: #0A3871;
+    border: 2px solid #000000;
+
+}
