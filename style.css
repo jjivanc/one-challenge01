@@ -1,7 +1,7 @@
 .content{
     display: block;
     background-color: #e6e6e6;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 .mainContent{
@@ -13,7 +13,7 @@
     gap: 20px;
     width: 90vw;
     height: 80vh;
-    margin: 40px;
+    margin: 10px;
 }
 .logo{
     padding: 20px 20px;
@@ -58,10 +58,10 @@ textarea:focus, input:focus, select:focus {
     align-items: center;
     justify-self: end;
     width: 400px;
+    margin: 10px;
 }
 .saida .msg {
     width: 300px;
-    height: 300px;
     justify-content: center;
     align-items: center;
 }
@@ -87,6 +87,7 @@ button {
     border: 2px solid #0A3871;
     width: 200px;
     height: 55px;
+    margin: 1px;
 }
 .crip{
     background-color: #0A3871;
@@ -130,6 +131,20 @@ button {
     background-color: #0A3871;
     border: 2px solid #000000;
 
+}
+
+footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 10px;
+}
+.fa {
+    font-size: 25px;
 }
 
 @media (max-width: 800px){
