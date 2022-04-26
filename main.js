@@ -1,7 +1,7 @@
 const input = document.querySelector('#texto');
 
 var crip = document.getElementById('crip');
-const descrip = document.getElementById('.descrip')
+var descrip = document.getElementById('descrip')
 var saidaTexto = document.querySelector('#saidaTexto')
 var saidatexto = document.querySelector('.saidatexto')
 var msg = document.querySelector('.msg')
@@ -53,8 +53,8 @@ const verificar = () =>{
         return false
     };
 };
-//crip.onclick = criptografar
-//descrip.onclick = descriptografar
-//btncopiarTexto.onclick = copiarTexto
+crip.addEventListener("click", criptografar);
+descrip.addEventListener("click", descriptografar);
+btncopiarTexto.addEventListener("click", copiarTexto);
 
 console.log('ativo')
